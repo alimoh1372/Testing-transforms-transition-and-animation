@@ -1,0 +1,85 @@
+﻿
+
+#main div {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    color: white;
+    font-size: 120px;
+    text-align: center;
+    font-size: 120px;
+}
+
+#div1 {
+    background-color: red;
+}
+
+#div2 {
+    background-color: blue;
+    -webkit-transform: translateX(75px) translateZ(-75px) rotateY(90deg);
+    transform: translateX(75px) translateZ(-75px) rotateY(90deg);
+}
+
+#div3 {
+    background-color: green;
+    transform: translateZ(-150px) rotateY(180deg);
+    -webkit-transform: translateZ(-150px) rotateY(180deg);
+}
+
+#div4 {
+    background-color: maroon;
+    transform: translateX(-75px) translateZ(-75px) rotateY(-90deg);
+    -webkit-transform: translateX(-75px) translateZ(-75px) rotateY(-90deg);
+}
+#div5{
+    background-color:aqua;
+    transform:translateY(75px) translateZ(-75px) rotateX(90deg);
+    -webkit-transform:translateY(75px) translateZ(-75px) rotateX(90deg);
+}
+#div6{
+    background-color:yellow;
+    transform:translateY(-75px) translateZ(-75px) rotateX(-90deg);
+    -webkit-transform:translateY(-75px) translateZ(-75px) rotateX(-90deg);
+}
+
+
+/*#div4:hover {
+        transform: translate3d(100px,40px,30px);
+        transform-origin: 0 0;
+    }
+
+#div2:hover {
+    transform: rotateX(100deg);
+   
+}
+
+#div3:hover {
+    transform: translateZ(50px) rotateY(340deg);
+    
+}
+
+#div1:hover {
+    transform: skew(50deg) rotateX(30deg) scaleZ(100);
+   
+}*/
+#master {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+#main {
+    margin-left: 150px;
+    margin-top: 100px;
+    position: relative;
+    transform-origin: 75px 75px -75px;
+    -webkit-transform-origin: 75px 75px -75px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition-duration: 2s;
+}
+
+#btn1 {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
